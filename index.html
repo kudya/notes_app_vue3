@@ -22,6 +22,10 @@
           ({{ index + 1 }}) {{ toUpperCase(note) }}
           <button class="btn danger" @click="removeNote(index)">Remove</button>
         </li>
+        <hr>
+        <li>
+          <strong>Total notes: {{ notes.length }}</strong>
+        </li>
       </ul>
       <div v-else="notes.length === 0">There aren't any notes. Add the first one.</div>
 
